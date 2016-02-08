@@ -25,9 +25,8 @@ class Master(Script):
     #location of prebuilt 0.5.5 package compiled using HDP Spark 1.4.1 TP that comes with HDP 2.3.2
     snapshot_package_14='https://www.dropbox.com/s/nwpv7dr1a724vtv/zeppelin-0.5.5-incubating-HDP232.tar.gz?dl=0'
 
-    #location of prebuilt 0.5.5 package compiled using HDP Spark 1.5.1 TP
-    snapshot_package_15='https://dl.dropboxusercontent.com/u/114020/zeppelin-snapshots/spark-1.5.1TP-HDP2.3.2/zeppelin-0.5.5-incubating-spark151-tp.tar.gz'
-
+    #location of prebuilt 0.6 package
+    snapshot_package_15='http://public-repo-1.hortonworks.com/HDP-LABS/Projects/zeppelin/0.6.0/zeppelin-0.6.0-incubating-SNAPSHOT.tar.gz'
 
     Execute('find '+params.service_packagedir+' -iname "*.sh" | xargs chmod +x')
 
